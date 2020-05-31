@@ -1,18 +1,17 @@
 ---
-title: 'Decenteralized Finance Calender Versioning'
+title: "Decenteralized Finance Calender Versioning"
 ---
 
-DeFiVer
-===
-![downloads](https://img.shields.io/github/downloads/atom/atom/total.svg)
-![build](https://img.shields.io/appveyor/ci/:user/:repo.svg)
-![chat](https://img.shields.io/discord/:serverId.svg)
+# DeFiVer
+
+![defiver](badge/defiver/2020.05/0000FF?icon=label)
 
 [TOC]
 
-# 
+# Calender Conventions and Methods
 
 ## 30/360 Methods
+
 ###### tags: 30/360 Bond Basis
 
 The conventions are distinguished by the manner in which they adjust Date1 and/or Date2 for the end of the month. Each convention has a set of rules directing the adjustments.
@@ -33,30 +32,26 @@ $$
 \frac{360 \times\left(Y_{3}-Y_{1}\right)+30 \times\left(M_{3}-M_{1}\right)+\left(D_{3}-D_{1}\right)}{360}
 $$
 
-### Coupon 
+### Coupon
 
 This is the same as the Factor calculation, with Date2 replaced by Date3. In the case that it is a regular coupon period, this is equivalent to:
 
-
-  
-  
 [30/360 Bond Basis](/-6dyCTK5ScaJyMhtgVtSww)  
-  This convention is exactly as 30U/360 below, except for the first two rules. Note that the order of calculations is important:
+ This convention is exactly as 30U/360 below, except for the first two rules. Note that the order of calculations is important:
 
--   D1 = MIN (D1, 30).
--   If D1 = 30 Then D2 = MIN (D2,30)
+- D1 = MIN (D1, 30).
+- If D1 = 30 Then D2 = MIN (D2,30)
 
 Other names:
 
--   30A/360.
-
+- 30A/360.
 
 ---
-
 
 ## Day Count Convention
 
 ###
+
 ### Interest
 
 Amount of interest accrued on an investment.
